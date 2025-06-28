@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alpha Biography - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Alpha Biography</div>
+    <div class="nav-right">
+      <input type="text" placeholder="Search biographies..." class="search-input" disabled />
+    </div>
+  </header>
+  <main class="main-content">
+    <div class="card">
+        <div class="profile-section">
+            <div class="profile-wrapper">
+                <img
+                src="https://via.placeholder.com/120"
+                alt="Profile"
+                id="profile-preview"
+                class="profile-photo"
+                />
+                <label for="profile-upload" class="upload-overlay">Change Photo</label>
+                <input type="file" id="profile-upload" accept="image/*" style="display:none;">
+            </div>
+        </div>
+
+      <h2>Welcome 👋</h2>
+      <p id="user-email"></p>
+
+      <section class="editable-section">
+        <h3>Headline</h3>
+        <div class="editable-box">
+          <textarea id="headline-text" disabled>Click Edit to change your headline</textarea>
+          <button id="headline-edit-btn">Edit</button>
+        </div>
+      </section>
+
+      <section class="editable-section">
+        <h3>Summary</h3>
+        <div class="editable-box">
+          <textarea id="summary-text" disabled>Click Edit to change your summary</textarea>
+          <button id="summary-edit-btn">Edit</button>
+        </div>
+      </section>
+
+      <button id="signout-btn" class="signout-btn">Sign Out</button>
+    </div>
+  </main>
+</body>
+</html>
